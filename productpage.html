@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fashion shops</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="swiper.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <div class="row">
+            <!-- header -->
+            <div class="header col-md-12 ">
+                <div class="menu col-12">
+                    <ul>
+                        <li><a href="#" onclick="menuItemClick()">MEN</a></li>
+                        <li><a href="#" onclick="menuItemClick()">WOMEN</a></li>
+                        <li><a href="#" onclick="menuItemClick()">BOYS</a></li>
+                        <li><a href="#"><img src="images/logo/logo-menu.png" alt="Home"></a></li>
+                        <li><a href="#" onclick="menuItemClick()">GIRLS</a></li>
+                        <li><a href="#" onclick="menuItemClick()">CUSTOMISE</a></li>
+                        <li><a href="#" onclick="menuItemClick()">COLLECTIONS</a></li>
+                    </ul>
+                </div>
+                <div class="menu-for-mobi col-12 px-0">
+                    <a class="logo" href="#"><img src="images/logo/logo-menu.png" alt="Home"></a>
+                    <div class="menu-right">
+                        <img id="btn-show-menu" src="images/icon/menu.svg" alt="">
+                        <ul>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">BOYS</a></li>
+                            <li><a href="#">GIRLS</a></li>
+                            <li><a href="#">CUSTOMISE</a></li>
+                            <li><a href="#">COLLECTIONS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header end -->
+
+    <div class="container">
+        <div class="row">
+            <div class="left col-md-8 col-12">
+                <ul>
+                    <div class="row">
+                        <li class="col-md-6 px-0"><img src="images/nike2.webp" alt=""></li>
+                        <li class="col-md-6 px-0"><img src="images/nike1.webp" alt=""></li>
+                        <li class="col-md-6 px-0"><img src="images/nike3.webp" alt=""></li>
+                        <li class="col-md-6 px-0"><img src="images/nike4.webp" alt=""></li>
+                        <li class="col-md-6 px-0"><img src="images/nike5.webp" alt=""></li>
+                    </div>
+                </ul>
+
+
+            </div>
+            <div class="right col-md-4 col-12">
+                <h3 class="product-title">
+                    Nike man 314
+                </h3>
+                <span>199$</span>
+                <div class="color">
+                    <div class="item-color">
+                        <input type="radio" name="color" id="">
+                        <span></span>
+                    </div>
+                    <div class="item-color">
+                        <input type="radio" name="color" id="">
+                        <span></span>
+                    </div>
+                    <div class="item-color">
+                        <input type="radio" name="color" id="">
+                        <span></span>
+                    </div>
+                    <div class="item-color">
+                        <input type="radio" name="color" id="">
+                        <span></span>
+                    </div>
+
+                </div>
+                <div class="select-size">
+                    <h3>Select size</h3>
+                    <div class="btn-size">
+                        <input type="radio" name="size" id="" value="40">
+                        <span> 40 EU/ 39 US</span>
+
+                    </div>
+                    <div class="btn-size">
+                        <input type="radio" name="size" id="" value="40">
+                        <span> 40</span>
+
+                    </div>
+                    <div class="btn-size">
+                        <input type="radio" name="size" id="" value="40">
+                        <span> 40</span>
+
+                    </div>
+                    <div class="btn-size">
+                        <input type="radio" name="size" id="" value="40">
+                        <span> 40</span>
+                    </div>
+                </div>
+                <div class="btn-add">
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                </div>
+                <div class="derection-preview">
+                    <p class="preview">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ratione nobis reiciendis iusto
+                        veniam tenetur repellat temporibus? Aspernatur recusandae odit, consequuntur enim unde repellat
+                        praesentium quas. Odit, sed tempore. Incidunt.
+                    </p>
+                    <ul class="product-info-title">
+                        <li>Style:lorem123</li>
+                        <li>Style:lorem123</li>
+                    </ul>
+                    <button class="read-more" onclick="showMoreInfo()">
+                        Read more
+                    </button>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card product-info-accordion">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-info-accordion">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-info-accordion">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-info-accordion">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Collapsible Group Item #4
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                helvetica,ox
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Swiper -->
+            <div class="list-also-like col-12 px-0">
+                <!-- <h3>you may also like</h3> -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike2.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike3.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike4.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="images/nike1.webp" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+            <div class="details-item " id="details-item">
+                <div class="btn-close">
+                    <img src="images/icon/cancel.svg" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="images/giayNike.png" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Nike Air Max 270</h2>
+                        <div class="color">
+                            <div class="item-color">
+                                <input type="radio" name="color" id="">
+                                <span></span>
+                            </div>
+                            <div class="item-color">
+                                <input type="radio" name="color" id="">
+                                <span></span>
+                            </div>
+                            <div class="item-color">
+                                <input type="radio" name="color" id="">
+                                <span></span>
+                            </div>
+                            <div class="item-color">
+                                <input type="radio" name="color" id="">
+                                <span></span>
+                            </div>
+
+                        </div>
+                        <div class="select-size">
+                            <!-- <h3>Select size</h3> -->
+                            <div class="btn-size">
+                                <input type="radio" name="size" id="" value="40">
+                                <span> 40 EU/ 39 US</span>
+
+                            </div>
+                            <div class="btn-size">
+                                <input type="radio" name="size" id="" value="40">
+                                <span> 40</span>
+
+                            </div>
+                            <div class="btn-size">
+                                <input type="radio" name="size" id="" value="40">
+                                <span> 40</span>
+
+                            </div>
+                            <div class="btn-size">
+                                <input type="radio" name="size" id="" value="40">
+                                <span> 40</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque voluptatibus
+                            molestias,
+                            alias
+                            quod possimus aperiam qui provident sequi nostrum consequatur beatae, dignissimos
+                            deleniti
+                            sed
+                            hil numquam maiores dignissimos possimus ea, facere perspiciatis dicta dolore odit quae
+                        </p>
+                        <h3>$199</h3>
+                        <button>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- main close-->
+
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer col-12">
+                <div class="row">
+                    <div class="colum1 col-md-3">
+                        <ul>
+                            <li><a href="">item1</a></li>
+                            <li><a href="">item2</a></li>
+                            <li><a href="">item3</a></li>
+                            <li><a href="">item4</a></li>
+                            <li><a href="">item5</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="colum2 col-md-3">
+                        <ul>
+                            <li><a href="">item1</a></li>
+                            <li><a href="">item2</a></li>
+                            <li><a href="">item3</a></li>
+                            <li><a href="">item4</a></li>
+                            <li><a href="">item5</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="colum3 col-md-2">
+                        <ul>
+                            <li><a href="">item1</a></li>
+                            <li><a href="">item2</a></li>
+                            <li><a href="">item3</a></li>
+                            <li><a href="">item4</a></li>
+                            <li><a href="">item5</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="colum4 col-md-4">
+                        <a href="#"><img src="images/icon/facebook.svg" alt=""></a>
+                        <a href="#"><img src="images/icon/instagram.svg" alt=""></a>
+                        <a href="#"><img src="images/icon/twitter.svg" alt=""></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- footer end -->
+
+    <button class="cart" id="cart">
+        <img class="cart_img" src="images/icon/shopping-cart.svg" alt="">
+        <div class="item-cart">
+            <img class="item-cart-img" src="images/nike1.webp" alt="">
+            <div class="item-cart-details">
+                <h4 class="item-name">Nike air max</h4>
+                <p class="price"> <span>199</span> <span>$</span> </p>
+            </div>
+            <div class="item-cart-price">
+                <div>
+                    <a class="minus">-</a>
+                    <input type="text" readonly class="count" value="1">
+                    <a class="plus">+</a>
+                </div>
+                <p class="total">200$</p>
+
+            </div>
+            <img src="images/icon/rubbish-bin.svg" alt="" class="remove">
+        </div>
+        <div class="item-cart">
+            <img class="item-cart-img" src="images/nike1.webp" alt="">
+            <div class="item-cart-details">
+                <h4 class="item-name">Nike air max</h4>
+                <p class="price"> <span>199</span> <span>$</span> </p>
+            </div>
+            <div class="item-cart-price">
+                <div>
+                    <a class="minus">-</a>
+                    <input type="text" readonly class="count" value="1">
+                    <a class="plus">+</a>
+                </div>
+                <p class="total">200$</p>
+
+            </div>
+            <img src="images/icon/rubbish-bin.svg" alt="" class="remove">
+        </div>
+    </button>
+
+
+    <section class="read-more-info" aria-expanded="false">
+        <button onclick="hidenModeInfor()"><i class="fas fa-times"></i></button>
+        <ul>
+            <li>Name product</li>
+            <li>Product details
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nesciunt!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nesciunt!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nesciunt!</li>
+
+                </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+
+        </ul>
+
+    </section>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="swiper.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
