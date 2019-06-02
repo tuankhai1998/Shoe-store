@@ -6,10 +6,12 @@ const btnshowmenu = document.getElementById('btn-show-menu');
 const buyNow = document.getElementsByClassName('btn-buy-now');
 
 
+
 function addItemToFavorite() {
     addTocart.forEach(function (item) {
         item.addEventListener('click', function (e) {
             createItemFavorite(e);
+            removeItemCart();
             minusCount();
             plusCount();
         });
@@ -238,6 +240,16 @@ function totalPrice(item) {
     // body
 }
 
+function removeItemCart() {
+    let remove = document.querySelectorAll('.remove');
+    remove.forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            this.parentElement.remove();
+        });
+    });
+    // body
+}
+
 window.addEventListener('load', function (e) {
 
     addItemToFavorite();
@@ -249,6 +261,9 @@ window.addEventListener('load', function (e) {
     itemClick();
 
     showMenu();
+
+    removeItemCart();
+
 
 });
 
