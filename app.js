@@ -5,10 +5,6 @@ const cart = document.getElementById('cart');
 const btnshowmenu = document.getElementById('btn-show-menu');
 const buyNow = document.getElementsByClassName('btn-buy-now');
 
-  
-
-console.log(buyNow[0]);
-console.log(buy);
 
 function addItemToFavorite() {
     addTocart.forEach(function (item) {
@@ -73,20 +69,25 @@ function showMenu() {
 }
 
 function showDetailWithBuyNow() {
-    buy.forEach(function (product) {
-        product.addEventListener('click', function (e) {
+
+    if (buyNow[0]) {
+        buyNow[0].addEventListener('click', function (e) {
             showDetail();
         });
-    });
-    
-    buyNow[0].addEventListener('click', function (e) {
-        showDetail();
-    });
+    }
+    else {
+        buy.forEach(function (product) {
+            product.addEventListener('click', function (e) {
+                showDetail();
+            });
+        });
+    }
+
 
 
 }
 
-function showDetail () {
+function showDetail() {
     let detailItem = document.getElementById('details-item');
     detailItem.classList.add('show-details');
     // body
@@ -200,7 +201,7 @@ function minusCount() {
                 totalPrice(item);
 
             }
-            console.log(this.nextElementSibling.value);
+            // console.log(this.nextElementSibling.value);
         });
     });
     // body
@@ -237,65 +238,20 @@ function totalPrice(item) {
     // body
 }
 
+window.addEventListener('load', function (e) {
 
+    addItemToFavorite();
 
+    closeDetail();
 
-// function scrollAnimagted() {
-//     // console.log(main.offsetTop);
-//     // animated  
-//     main.children[0].classList.add('animated');
-//     window.addEventListener('scroll', function (e) {
+    showDetailWithBuyNow();
 
-//         // console.log(window.offsetTop);
-//         if (pageYOffset >= main.children[0].offsetTop +300) {
-//             console.log(main.children[2].offsetTop,main.children[0].offsetTop,pageYOffset);  
-//             main.children[0].classList.remove('lightSpeedOut');
-//             main.children[0].classList.add('lightSpeedIn');
+    itemClick();
 
-//         }
-//         if(pageYOffset >= main.children[2].offsetTop + 500 || pageYOffset <= main.children[0].offsetTop +300 ){
-//             console.log(main.children[2].offsetTop,main.children[0].offsetTop,pageYOffset);  
-//             main.children[0].classList.remove('lightSpeedIn');
-//             main.children[0].classList.add('lightSpeedOut');
-//         }
-//         // else {
-//         //     main.children[0].classList.remove('lightSpeedIn');
-//         //     main.children[0].classList.add('lightSpeedOut');
-//         //     // console.log('haha');
+    showMenu();
 
-//         // }
-//        // body
-//     });
-// }
-
-
-
-addItemToFavorite();
-
-closeDetail();
-
-showDetailWithBuyNow();
-
-itemClick();
-
-
-
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 
-
-showMenu();
 
 
 
